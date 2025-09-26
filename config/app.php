@@ -123,4 +123,5 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'hugging_face_token' => env('HUGGING_FACE_API_TOKEN'),
 ];
