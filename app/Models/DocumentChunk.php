@@ -4,11 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Pgvector\Laravel\Vector; // Importamos la clase Vector del paquete oficial
+use Pgvector\Laravel\Vector;
+use Pgvector\Laravel\HasNeighbors;
 
 class DocumentChunk extends Model
 {
-    use HasFactory;
+    use HasFactory, HasNeighbors;
 
     /**
      * The attributes that are mass assignable.
